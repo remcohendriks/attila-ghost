@@ -25,52 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/* Parallax cover */
-document.addEventListener("DOMContentLoaded", function () {
-  var html = document.documentElement;
-  var cover = document.querySelector(".cover");
-  var coverPosition = 0;
-  var ticking = false;
-
-  // Function to handle the parallax effect
-  function prlx() {
-    if (cover) {
-      var windowPosition = window.scrollY || document.documentElement.scrollTop;
-      coverPosition = windowPosition > 0 ? Math.floor(windowPosition * 0.25) : 0;
-
-      cover.style.transform = `translate3d(0, ${coverPosition}px, 0)`;
-
-      if (windowPosition < cover.offsetHeight) {
-        html.classList.add("cover-active");
-      } else {
-        html.classList.remove("cover-active");
-      }
-    }
-  }
-  function onScrollOrResize() {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        prlx();
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }
-
-  // Update cached cover height on resize
-  window.addEventListener("resize", () => {
-    coverHeight = cover ? cover.offsetHeight : 0;
-  });
-
-  // Attach scroll and resize listeners
-  window.addEventListener("scroll", onScrollOrResize, { passive: true });
-  window.addEventListener("resize", onScrollOrResize);
-  window.addEventListener("orientationchange", onScrollOrResize);
-
-  // Initial call
-  prlx();
-});
-  
 /* Gallery */
 function gallery() {
   'use strict';
