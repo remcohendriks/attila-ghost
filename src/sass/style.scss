@@ -129,8 +129,8 @@ textarea {
 		}
 	}
 
-	ol > li:before,
-	ul > li:before {
+	ol>li:before,
+	ul>li:before {
 		position: absolute;
 		width: 1.5em;
 		margin-left: -2em;
@@ -141,12 +141,12 @@ textarea {
 		color: var(--ghost-accent-color);
 	}
 
-	ul > li:before {
+	ul>li:before {
 		margin-top: -1px;
 		content: '—' !important;
 	}
 
-	ol > li:before {
+	ol>li:before {
 		content: counter(item) ". " !important;
 		counter-increment: item;
 	}
@@ -372,9 +372,9 @@ textarea {
 		}
 
 		fieldset {
-				border: 0;
-				margin: 0;
-				padding: 0;
+			border: 0;
+			margin: 0;
+			padding: 0;
 		}
 	}
 
@@ -463,18 +463,15 @@ textarea {
 	input[type="submit"]:hover,
 	input[type="button"]:hover,
 	.kg-btn:hover,
-	.button:hover {
-
-	}
+	.button:hover {}
 
 	input[type="reset"]:focus,
 	input[type="submit"]:focus,
 	input[type="button"]:focus,
 	.kg-btn:focus,
-	.button:focus {
-
-	}
+	.button:focus {}
 }
+
 /* ==========================================================================
    KG Cards
    ========================================================================== */
@@ -521,9 +518,7 @@ textarea {
 			background: var(--color-background-secondary);
 			border: 1px solid var(--color-background-contrast);
 
-			.kg-file-card-icon {
-
-			}
+			.kg-file-card-icon {}
 
 			.kg-file-card-contents {
 				margin: 0;
@@ -548,6 +543,7 @@ textarea {
 						display: inline-block;
 						line-height: inherit;
 					}
+
 					.kg-file-card-filesize {
 						display: inline-block;
 						font-size: 0.9em;
@@ -573,6 +569,7 @@ textarea {
 			figcaption {
 				padding-left: 6rem;
 				padding-right: 6rem;
+
 				@media only screen and (max-width: $breakpoint-medium) {
 					padding-left: 2rem;
 					padding-right: 2rem;
@@ -580,6 +577,7 @@ textarea {
 
 				&:after {
 					margin-left: 6rem;
+
 					@media only screen and (max-width: $breakpoint-medium) {
 						margin-left: 2rem;
 					}
@@ -595,6 +593,7 @@ textarea {
 			figcaption {
 				padding-left: 8rem;
 				padding-right: 8rem;
+
 				@media only screen and (max-width: $breakpoint-medium) {
 					padding-left: 4rem;
 					padding-right: 4rem;
@@ -602,6 +601,7 @@ textarea {
 
 				&:after {
 					margin-left: 8rem;
+
 					@media only screen and (max-width: $breakpoint-medium) {
 						margin-left: 4rem;
 					}
@@ -613,7 +613,7 @@ textarea {
 			margin: 0 auto;
 		}
 
-		.kg-image-full + figcaption {
+		.kg-image-full+figcaption {
 			margin-bottom: 1.33334em;
 		}
 	}
@@ -628,6 +628,7 @@ textarea {
 		figcaption {
 			padding-left: 6rem;
 			padding-right: 6rem;
+
 			@media only screen and (max-width: $breakpoint-medium) {
 				padding-left: 2rem;
 				padding-right: 2rem;
@@ -635,6 +636,7 @@ textarea {
 
 			&:after {
 				margin-left: 6rem;
+
 				@media only screen and (max-width: $breakpoint-medium) {
 					margin-left: 2rem;
 				}
@@ -673,7 +675,7 @@ textarea {
 	.kg-embed-card {
 		margin: 0 0 4rem;
 
-		> * {
+		>* {
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -778,6 +780,7 @@ textarea {
 	.kg-bookmark-publisher {
 		color: var(--ghost-accent-color);
 	}
+
 	@media (max-width: $breakpoint-medium) {
 		.kg-bookmark-container {
 			flex-direction: column;
@@ -806,14 +809,18 @@ textarea {
 		border-radius: 3px;
 		padding: 2.5rem;
 	}
-	.kg-toggle-card +.kg-toggle-card {
+
+	.kg-toggle-card+.kg-toggle-card {
 		margin-top: calc(-4rem - 1px);
 	}
+
 	.kg-toggle-card {
 
 		.kg-toggle-content {
 
-			p, ol, ul {
+			p,
+			ol,
+			ul {
 				font-size: inherit;
 				line-height: inherit;
 				margin-top: 1rem;
@@ -821,6 +828,7 @@ textarea {
 		}
 	}
 }
+
 /* ==========================================================================
     Misc
     ========================================================================== */
@@ -921,7 +929,7 @@ textarea {
 		color: white;
 		background: black;
 		overflow: hidden;
-		text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 
 		&:after {
 			display: none;
@@ -932,7 +940,6 @@ textarea {
 		position: relative;
 		z-index: 10;
 		padding-bottom: calc(4rem + 2vw);
-		text-align: center;
 		border-bottom: 1px solid var(--color-background-contrast);
 	}
 
@@ -962,8 +969,8 @@ textarea {
 		left: 0;
 		bottom: 0;
 		z-index: 8;
-		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.333) 100%);
-		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.333) 100%);
+		background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.333) 100%);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.333) 100%);
 	}
 
 	img {
@@ -983,7 +990,7 @@ textarea {
 	padding: 0;
 	font-family: var(--gh-font-heading);
 	font-weight: 700;
-	font-size: 6em;
+	font-size: 3em;
 	line-height: 1em;
 	text-decoration: none;
 	color: var(--color-content-lead);
@@ -997,7 +1004,7 @@ textarea {
 	display: block;
 	margin-top: 1rem;
 	padding: 0;
-	font-size: 3em;
+	font-size: 2em;
 	line-height: 1.33334em;
 	color: var(--color-content-secondary);
 }
@@ -1066,6 +1073,7 @@ textarea {
 
 		a {
 			cursor: pointer;
+
 			span {
 				display: none;
 			}
@@ -1084,6 +1092,7 @@ textarea {
 
 	&.archive-author {
 		padding-left: 16rem;
+
 		@media only screen and (max-width: $breakpoint-medium) {
 			padding-left: 0;
 			padding-right: 10rem;
@@ -1143,11 +1152,11 @@ textarea {
 		}
 
 		.archive-description {
-			color: rgba(255,255,255,0.8);
+			color: rgba(255, 255, 255, 0.8);
 		}
 
 		a {
-			color: rgba(255,255,255,0.8);
+			color: rgba(255, 255, 255, 0.8);
 
 			&:focus,
 			&:hover {
@@ -1169,6 +1178,7 @@ textarea {
 	max-width: $inner;
 	margin: 0 auto;
 	padding: 0 8rem;
+
 	@media only screen and (max-width: $breakpoint-medium) {
 		padding: 0 4rem;
 	}
@@ -1184,13 +1194,14 @@ textarea {
 	width: 100%;
 	z-index: 400;
 	transition: all ease-out 0.3s;
+
 	@media only screen and (max-width: $breakpoint-medium) {
-		transform: translate3d(0,-100%,0);
+		transform: translate3d(0, -100%, 0);
 	}
 }
 
 .menu-active .nav-header {
-	transform: translate3d(0,0,0);
+	transform: translate3d(0, 0, 0);
 }
 
 .nav-close {
@@ -1265,12 +1276,14 @@ textarea {
 	background: #222426;
 	color: var(--color-content-secondary);
 	border-color: #3B3D40;
+
 	@supports (-webkit-backdrop-filter: blur(2rem)) {
-		background: rgba(34,36,38,0.9);
+		background: rgba(34, 36, 38, 0.9);
 		-webkit-backdrop-filter: blur(2rem);
 	}
 
 	a {
+
 		&:focus,
 		&:hover {
 			color: var(--color-content-main-dark);
@@ -1289,7 +1302,7 @@ textarea {
 		flex-direction: column;
 
 		@supports (-webkit-backdrop-filter: blur(2rem)) {
-			background: rgba(34,36,38,0.9);
+			background: rgba(34, 36, 38, 0.9);
 			-webkit-backdrop-filter: blur(2rem);
 		}
 
@@ -1301,6 +1314,7 @@ textarea {
 
 .nav-header .logo {
 	margin-right: 3rem;
+
 	@media only screen and (max-width: $breakpoint-medium) {
 		display: none;
 	}
@@ -1327,13 +1341,14 @@ textarea {
 		margin: 0 auto;
 		padding: 0;
 		list-style: none;
+
 		@media only screen and (max-width: $breakpoint-medium) {
 			flex-direction: column;
 			flex-shrink: 0;
 			padding: 2rem 0;
 		}
 	}
-	
+
 	li {
 		position: relative;
 		margin-right: 3rem;
@@ -1341,6 +1356,7 @@ textarea {
 
 		&.active {
 			font-weight: 600;
+
 			a:before {
 				position: absolute;
 				content: '';
@@ -1352,6 +1368,7 @@ textarea {
 				margin-left: -1rem;
 				margin-top: -2rem;
 				background: var(--ghost-accent-color);
+
 				@media only screen and (max-width: $breakpoint-medium) {
 					left: 0;
 					top: 50%;
@@ -1375,7 +1392,7 @@ textarea {
 			@media only screen and (max-width: $breakpoint-medium) {
 				font-size: 2em;
 				padding-left: 4rem;
-	
+
 				&:before {
 					content: '';
 					position: absolute;
@@ -1430,7 +1447,7 @@ textarea {
 				opacity: 0.92;
 			}
 		}
-		
+
 		&.nav-button-secondary {
 			height: 4rem;
 			margin: 0 0.5rem;
@@ -1448,7 +1465,7 @@ textarea {
 				color: white;
 				border: 1px solid #3B3D40;
 			}
-		
+
 			&:focus,
 			&:hover {
 				color: var(--color-content-main);
@@ -1459,7 +1476,7 @@ textarea {
 				}
 			}
 		}
-		
+
 
 		&.nav-search {
 			height: 4rem;
@@ -1480,7 +1497,7 @@ textarea {
 	@media only screen and (max-width: $breakpoint-medium) {
 		width: 100%;
 
-		> * {
+		>* {
 			width: 100%;
 		}
 	}
@@ -1489,7 +1506,7 @@ textarea {
 .cover-active {
 
 	.nav-wrapper-control a {
-		color: rgba(255,255,255,0.8);
+		color: rgba(255, 255, 255, 0.8);
 
 		&:focus,
 		&:hover {
@@ -1499,8 +1516,8 @@ textarea {
 
 	.nav-header a {
 		@media only screen and (min-width: $breakpoint-medium) {
-			color: rgba(255,255,255,0.8);
-			border-color: rgba(255,255,255,0.8);
+			color: rgba(255, 255, 255, 0.8);
+			border-color: rgba(255, 255, 255, 0.8);
 		}
 
 		&:focus,
@@ -1518,6 +1535,7 @@ textarea {
 		}
 	}
 }
+
 /* ==========================================================================
    Reading Progress
    ========================================================================== */
@@ -1542,6 +1560,7 @@ textarea {
 	height: 3px;
 	background: var(--ghost-accent-color);
 }
+
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -1734,11 +1753,13 @@ textarea {
 
 	margin-left: -6rem;
 	margin-top: 1rem;
+
 	@media only screen and (max-width: $breakpoint-medium) {
 		width: 100%;
 		margin-left: -4rem;
 	}
 }
+
 /* ==========================================================================
    Post
    ========================================================================== */
@@ -1752,7 +1773,7 @@ textarea {
 	margin-bottom: calc(4rem + 2vw);
 	background: black;
 	overflow: hidden;
-	text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .post-cover {
@@ -1785,8 +1806,8 @@ textarea {
 		left: 0;
 		bottom: 0;
 		z-index: 8;
-		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.333) 100%);
-		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.333) 100%);
+		background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.333) 100%);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.333) 100%);
 	}
 }
 
@@ -1843,8 +1864,8 @@ textarea {
 	z-index: 10;
 	margin: 0 0 2rem;
 	font-family: var(--gh-font-heading);
-	font-size: 4em;
-	line-height: 1.25em;
+	font-size: 2em;
+	line-height: 1em;
 	font-weight: 700;
 	text-indent: -1px;
 	color: var(--color-content-lead);
@@ -1962,7 +1983,7 @@ textarea {
 }
 
 .has-cover .post-meta {
-	color: rgba(255,255,255,0.8);
+	color: rgba(255, 255, 255, 0.8);
 	padding: 0;
 
 	&:before {
@@ -1992,7 +2013,7 @@ textarea {
 	align-items: center;
 }
 
-.post-content > * {
+.post-content>* {
 	min-width: 100%;
 	max-width: 100%;
 	box-sizing: border-box;
@@ -2005,6 +2026,7 @@ textarea {
 		margin-top: 0;
 	}
 }
+
 /* ==========================================================================
    Post Info
    ========================================================================== */
@@ -2056,6 +2078,7 @@ textarea {
 	text-decoration: none;
 	border-radius: 2em;
 	transition: all ease 0.2s;
+
 	@media only screen and (max-width: $breakpoint-medium) {
 		margin-left: 0;
 		margin-right: 0.66667em;
@@ -2074,6 +2097,7 @@ textarea {
 	float: left;
 	display: flex;
 	flex-wrap: wrap;
+
 	@media only screen and (max-width: $breakpoint-medium) {
 		max-width: none;
 		float: none;
@@ -2105,6 +2129,7 @@ textarea {
 		color: var(--color-background-main);
 	}
 }
+
 /* ==========================================================================
    Post Comments
    ========================================================================== */
@@ -2183,6 +2208,7 @@ textarea {
 	color: inherit;
 	display: block;
 	width: 50%;
+
 	@media only screen and (max-width: $breakpoint-medium) {
 		display: block;
 		width: 100%;
@@ -2203,6 +2229,7 @@ textarea {
 
 	.post-nav-teaser {
 		padding-right: 3rem;
+
 		@media only screen and (max-width: $breakpoint-medium) {
 			padding-right: 0;
 		}
@@ -2215,6 +2242,7 @@ textarea {
 
 	.post-nav-teaser {
 		padding-left: 3rem;
+
 		@media only screen and (max-width: $breakpoint-medium) {
 			padding-left: 0;
 		}
@@ -2225,6 +2253,7 @@ textarea {
 	position: relative;
 	padding: 2rem 0;
 	min-height: 8rem;
+
 	@media only screen and (max-width: $breakpoint-medium) {
 		min-height: 4em;
 		padding: 2em 0;
@@ -2336,6 +2365,7 @@ textarea {
 	transition: all ease 0.2s;
 	border-radius: 4rem;
 	box-sizing: border-box;
+
 	&:focus,
 	&:hover {
 		color: var(--color-content-main);
@@ -2354,7 +2384,7 @@ textarea {
 }
 
 .pagination .pagination-label {
-	
+
 	@media only screen and (max-width: $breakpoint-small) {
 		display: none;
 	}
