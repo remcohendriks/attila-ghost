@@ -1033,8 +1033,7 @@ textarea {
 	font-size: 1.6em;
 	line-height: 1.5em;
 	font-weight: 300;
-	color: var(--color-content-secondary);
-	opacity: 0.85;
+	color: var(--color-content-main);
 
 	p {
 		margin: 0.5rem 0;
@@ -1062,8 +1061,7 @@ textarea {
 }
 
 .has-cover .blog-tagline {
-	color: rgba(255, 255, 255, 0.9);
-	opacity: 0.9;
+	color: white;
 
 	a {
 		color: white;
