@@ -1734,8 +1734,8 @@ textarea {
 	position: relative;
 
 	.post .post-box {
-		padding-top: calc(2vw);
-		padding-bottom: calc(2vw);
+		padding-top: calc(1rem + 2vw);
+		padding-bottom: calc(1rem + 2vw);
 		border-bottom: 1px solid var(--color-background-contrast);
 	}
 
