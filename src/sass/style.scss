@@ -1032,7 +1032,9 @@ textarea {
 	margin-top: 2rem;
 	font-size: 1.6em;
 	line-height: 1.5em;
+	font-weight: 300;
 	color: var(--color-content-secondary);
+	opacity: 0.85;
 
 	p {
 		margin: 0.5rem 0;
@@ -1048,23 +1050,25 @@ textarea {
 
 	a {
 		color: var(--ghost-accent-color);
-		text-decoration: none;
-		font-weight: 500;
+		text-decoration: underline;
+		font-weight: 400;
 		transition: all ease-out 0.1s;
 
 		&:focus,
 		&:hover {
-			text-decoration: underline;
+			opacity: 0.8;
 		}
 	}
 }
 
 .has-cover .blog-tagline {
 	color: rgba(255, 255, 255, 0.9);
+	opacity: 0.9;
 
 	a {
 		color: white;
-		font-weight: 600;
+		font-weight: 400;
+		text-decoration: underline;
 	}
 }
 
