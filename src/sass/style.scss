@@ -985,6 +985,20 @@ textarea {
 	}
 }
 
+.blog-avatar {
+	display: block;
+	width: 12rem;
+	height: 12rem;
+	margin: 0 auto 2rem;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid var(--color-background-contrast);
+}
+
+.has-cover .blog-avatar {
+	border-color: rgba(255, 255, 255, 0.3);
+}
+
 .blog-name {
 	display: block;
 	margin: 0;
