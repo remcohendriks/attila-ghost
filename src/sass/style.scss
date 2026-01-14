@@ -1028,6 +1028,46 @@ textarea {
 	color: white;
 }
 
+.blog-tagline {
+	margin-top: 2rem;
+	font-size: 1.6em;
+	line-height: 1.5em;
+	color: var(--color-content-secondary);
+
+	p {
+		margin: 0.5rem 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		color: var(--ghost-accent-color);
+		text-decoration: none;
+		font-weight: 500;
+		transition: all ease-out 0.1s;
+
+		&:focus,
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.has-cover .blog-tagline {
+	color: rgba(255, 255, 255, 0.9);
+
+	a {
+		color: white;
+		font-weight: 600;
+	}
+}
+
 .archive {
 	position: relative;
 	z-index: 10;
