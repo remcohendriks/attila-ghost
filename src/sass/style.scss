@@ -1070,6 +1070,36 @@ textarea {
 	}
 }
 
+.blog-links {
+	display: flex;
+	gap: 2rem;
+	margin-top: 2rem;
+	justify-content: center;
+	font-size: 1.6em;
+
+	a {
+		color: var(--ghost-accent-color);
+		text-decoration: underline;
+		text-underline-offset: 0.2em;
+		font-weight: 400;
+		transition: all ease-out 0.1s;
+
+		&:focus,
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+
+.has-cover .blog-links {
+	a {
+		color: white;
+		font-weight: 400;
+		text-decoration: underline;
+		text-underline-offset: 0.2em;
+	}
+}
+
 .archive {
 	position: relative;
 	z-index: 10;
