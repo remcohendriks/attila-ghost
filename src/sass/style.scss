@@ -1050,6 +1050,7 @@ textarea {
 	a {
 		color: var(--ghost-accent-color);
 		text-decoration: underline;
+		text-underline-offset: 0.2em;
 		font-weight: 400;
 		transition: all ease-out 0.1s;
 
@@ -1067,6 +1068,7 @@ textarea {
 		color: white;
 		font-weight: 400;
 		text-decoration: underline;
+		text-underline-offset: 0.2em;
 	}
 }
 
